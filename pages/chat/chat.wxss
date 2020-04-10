@@ -1,0 +1,29 @@
+.item{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  width:100%;
+  padding: 10rpx 20rpx;
+  border-bottom: 2rpx solid rgb(230, 224, 224);
+}
+.item .left image{
+ height: 80rpx;
+ width: 80rpx;
+ border-radius: 40rpx;
+ margin-right: 30rpx;
+}
+.item .min text{
+  display: block;
+
+}
+.item .min text:nth-child(2){
+  font-size: 26rpx;
+  color: rgb(167, 164, 160);
+}
+.item .right{
+  height: 90rpx;
+  margin-left: auto;
+  padding-right: 50rpx;
+  font-size: 24rpx;
+  color: rgb(167, 164, 160);
+}

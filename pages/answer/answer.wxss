@@ -1,0 +1,144 @@
+/* pages/answer/answer.wxss */
+.top{
+  display: flex;
+ margin-left: 30rpx;
+ margin-top: 30rpx;
+}
+.item{
+  display: flex;
+  align-items: center;
+  color: rgb(25, 123, 216);
+  font-size: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: rgba(215, 218, 243, 0.6);
+  margin-left: 5rpx;
+  border-radius: 25rpx;
+}
+.item::before,.item::after{
+  content: "";
+  display:inline-block;
+  height: 50rpx;
+  width: 30rpx;
+
+}
+.head{
+  padding: 35rpx;
+  font-size: 40rpx;
+  padding-bottom: 10rpx;
+}
+.text{
+  margin:0 35rpx;
+  font-size: 35rpx;
+  margin-bottom: 15rpx;
+}
+.comment{
+  display: flex;
+  padding-left: 35rpx;
+}
+.comment_item{
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #949797;
+  justify-content: center;
+  margin-left: 30rpx;
+ 
+}
+.comment_item image{
+  height: 45rpx;
+  width: 45rpx;
+  margin-right: 15rpx;
+}
+.comment .right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  background-color: #52C980;
+  height: 80rpx;
+  width: 150rpx;
+  font-size: 25rpx;
+  margin-right: 50rpx;
+  border-radius: 15rpx;
+  color: white;
+}
+.main1{
+  display: flex;
+  width: 100%;
+ 
+}
+.main_item{
+  display: flex;
+  width: 50%;
+  height: 90rpx;
+  font-size: 30rpx;
+  color: #949797;
+  justify-content: center;
+  align-items: center;
+  border: 1rpx solid #eee;
+}
+.main_item image{
+  height: 55rpx;
+  width: 55rpx;
+  margin-right: 20rpx;
+}
+/* .comment_item text{
+  display: inline-block;
+  height: 45rpx;
+  vertical-align: middle;
+} */
+.feed-item{
+ 
+  padding: 30rpx 30rpx 20rpx;
+  margin: 7rpx 0 6rpx 0;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px #eeeeee;
+}
+.feed-item .top{
+  height: 50rpx;
+ line-height: 50rpx;
+ position: relative;
+ right: 25rpx;
+ 
+ margin-bottom: 10rpx;
+}
+.feed-item .top .left{
+  display: inline-block;
+  height: 45rpx;
+  width: 45rpx;
+
+  
+}
+.feed-item .top text{
+  display: inline-block;
+  vertical-align: middle;
+  height: 100rpx;
+  margin: 0 0 0 15rpx;
+  color: #7b8383;
+  font-size: 26rpx;
+}
+.container .feed-item .top .right{
+  height: 35rpx;
+  width: 35rpx;
+  float: right;
+}
+.question{
+  font-size: 26rpx;
+  margin:15rpx 0 10rpx 0;
+}
+.answer{
+  font-size: 24rpx;
+  color: #949797;
+}
+.answer-actions{
+  font-size: 24rpx;
+}
+.answer-actions text{
+  display: inline-block;
+  margin-top: 10rpx;
+  margin-left: 15rpx;
+  color: #949797;
+}

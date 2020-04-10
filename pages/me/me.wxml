@@ -1,0 +1,27 @@
+<!--顶部-->
+<view class="top">
+  
+    <view class="left">
+      <image class="user" src="{{user.img}}"></image>
+    </view>
+    <view class="min">
+      <text>用户名： {{user.name}}</text>
+      <text>知乎号： {{user.weixin}}</text>
+    </view>
+
+    <!-- <view class="right" bindtap="login" 
+    open-type="getUserInfo" 
+    bindgetuserinfo="bindGetUserInfo">
+      <text wx:if="{{is}}">未登录，请点击登陆</text>
+    </view> -->
+    
+</view>
+ <!--下一部分-->
+ <view>
+  <block wx:for="{{items}}" wx:key="index">
+    <view class="item">
+      <image src="{{item.img}}"></image>
+      <text>{{item.text}}</text>
+    </view>
+  </block>
+ </view>

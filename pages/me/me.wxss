@@ -1,0 +1,46 @@
+.top{
+  display: flex;
+  align-items: center;
+  height: 200rpx;
+  border:3rpx solid rgb(227, 227, 230);
+  margin-top: 10rpx;
+  padding:0 30rpx;
+  color: rgb(116, 114, 112);
+}
+.top .left image{
+  height: 100rpx;
+  width: 100rpx;
+  margin-right: 30rpx;
+}
+.top .min text{
+  display: block;
+}
+.top .right{
+  border:2rpx solid rgb(236, 233, 230);
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding:0 30rpx;
+  height: 90%;
+}
+text{
+  font-size: 26rpx;
+}
+.item {
+  display: flex;
+  align-items: center;
+  
+  color: rgb(116, 114, 112);
+  height: 120rpx;
+  padding:0 30rpx;
+  border-bottom: 3rpx solid rgb(227, 227, 230);
+}
+.item image{
+  width: 55rpx;
+  height: 55rpx;
+  margin-right: 20rpx;
+}
+.item text{
+  font-size: 30rpx;
+  margin-left: 15rpx;
+}

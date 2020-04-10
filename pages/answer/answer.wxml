@@ -1,0 +1,72 @@
+<view>
+<view  class="top">
+<block wx:for="{{topLists}}" wx:key="index">
+   <view class="item">
+  <text>{{item}}</text>
+ </view>
+</block>
+</view>
+
+<view class="head">
+  <text>选择Kindle而不是纸质书的原因是什么？</text>
+</view>
+<view class="text">
+  <text>web前端*不靠谱天气*想做代码大佬</text>
+</view>
+
+<view class="comment">
+
+
+<view class="comment_item">
+ <image src="../../images/eye.png" ></image>
+  <text>3316</text>
+</view>
+ 
+  <view class="comment_item">
+     <image src="../../images/comment2.png "></image> 
+     <text>27</text>
+  </view>
+  
+  <view class="right">
+    <text>关注</text>
+  </view>
+</view>
+
+
+<!--下一部分-->
+<view class="main1">
+  <view class="main_item">
+   <image src="../../images/invite.png"></image>
+    <text>邀你回答</text>
+  </view>
+   <view class="main_item">
+   <image src="../../images/write.png"></image>
+    <text>写问题</text>
+   </view>
+</view>
+
+<block wx:for="{{feed}}" wx:for-index="idx" wx:key="idx">
+    <view class="feed-item">
+
+    <view class="top">
+      <image class="left" src="{{item.feed_source_img}} "></image>
+      <text class="user">{{item.feed_source_name}}</text>
+     
+    </view>
+
+    <view class="question_item" >
+       <view class="answer" bindtap="bindQueTap">
+          <text>{{item.feed_source_txt}}</text>
+      </view> 
+    </view>
+
+    <view class="answer-actions">
+        <text>{{item.good_num}}   赞同</text>
+        <text>{{item.comment_num}}  评价</text>
+        <text>2个月前</text>
+    </view>
+
+    </view>
+  </block>
+
+</view>

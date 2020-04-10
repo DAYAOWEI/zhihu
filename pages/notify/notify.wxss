@@ -1,0 +1,65 @@
+/* pages/notify/notify.wxss */
+.top{
+  display: flex;
+  height: 100rpx;
+  width: 100%;
+  background-color: rgb(100, 161, 218);
+}
+.item{
+  display: flex;
+  width: 33.3%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30rpx;
+}
+.head{
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  font-size: 26rpx;
+  color: rgb(135, 138, 141);
+  background-color: rgb(241, 232, 241);
+  padding:0 30rpx;
+  
+}
+.head image{
+  height: 55rpx;
+  width: 55rpx;
+  margin-left: auto;
+}
+.head_main{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 120rpx;
+  border: 1px solid rgb(228, 224, 224);
+  border-radius: 5rpx;
+  background-color: white;
+  padding:20rpx;
+ 
+}
+.head_main .left{
+  margin-right: 15rpx;
+}
+.head_main .left image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.head_main .min{
+  margin-left: 15rpx;
+  margin-right: 50rpx;
+}
+.min text{
+  display: block;
+  margin-bottom: 10rpx;
+  color: rgb(131, 128, 128);
+}
+.min text:nth-child(1){
+  display: block;
+  font-size: 30rpx;
+}
+.min text:nth-child(2){
+  font-size: 28rpx;
+  color: rgb(131, 128, 128);
+}

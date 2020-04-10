@@ -1,0 +1,68 @@
+<!--顶部-->
+
+<view class="top">
+  <view class="item" 
+  wx:for="{{lists}}" 
+  wx:key="index"
+  bindtap="switchTab"
+  data-idx="{{index}}">
+    <text >{{item}}</text>
+    
+  </view>
+</view>
+<!--判断点击的选择-->
+<view>
+  <!--下一部分  轮播-->
+<swiper class="activity" 
+             indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+            wx:if="{{current===0}}"
+            >
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" ></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!--最后一部分-->
+    <view class="container">
+    <block wx:for="{{feed}}" wx:for-index="idx" wx:key="idx">
+    <view class="feed-item">
+
+    <view class="top">
+      <image class="left" src="{{item.feed_source_img}} "></image>
+      <text class="user">{{item.feed_source_name}}</text>
+     
+     
+    </view>
+
+    <view class="question_item" >
+    <view class="question" bindtap="bindItemTap">
+      <text>{{item.question}}</text>
+    </view>
+     <view class="answer" bindtap="bindQueTap">
+      {{item.answer_ctnt}}
+     </view> 
+    </view>
+
+    <view class="answer-actions">
+      <view>
+        <text>{{item.good_num}}   赞同</text>
+      </view>
+      <view>
+        <text>{{item.comment_num}}  评价</text>
+      </view>
+      <view>
+        <text>关注问题</text>
+      </view>
+    </view>
+   
+    </view>
+  
+  </block>
+  </view>
+</view>
+
+
+
+

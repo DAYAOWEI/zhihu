@@ -1,0 +1,18 @@
+
+<view class="main">
+    <block wx:for="{{items}}" wx:key="index">
+    <!--聊天记录-->
+      <view class="item">
+        <view class="left">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="min">
+          <text>{{item.text1}}</text>
+          <text>{{item.text2}}</text>
+        </view>
+        <view class="right">
+          {{item.text3}}
+        </view>
+      </view>
+    </block>
+</view>

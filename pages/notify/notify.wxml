@@ -1,0 +1,39 @@
+<!--顶部-->
+<view class="top">
+  <view class="item" 
+  wx:for="{{lists}}" 
+  wx:key="index"
+  bindtap="switchTab"
+  data-idx="{{index}}">
+    <text >{{item}}</text> 
+  </view>
+</view>
+<!--头部-->
+<view class="head">
+  <text>{{no_message_number}}条消息</text>
+
+  <image src="../../images/allread.png"></image>
+</view>
+
+<!--主体内容-->
+<view class="main">
+  <block wx:for="{{items}}" wx:key="index">
+    
+      <view class="head_main">
+    <view class="left">
+      <image src="{{item.img}}"></image>
+    </view>
+    <view class="min">
+      <text>{{item.text1}}</text>
+      <text>{{item.text2}}</text>
+    </view>
+   
+  </view>
+
+
+  </block> 
+
+
+
+
+</view>
